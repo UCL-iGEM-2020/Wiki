@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--This template is created by UCL iGEM 2020 (Laide and Anna)-->
+
+<html lang = "en" dir = "ltr">
+
+  <head>
+    <title>Team:Team Name/Page Name - 2020.igem.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+     rel="stylesheet" type="text/css" />
+  </head>
+
+  <style>
+    header .banner{
+      background: linear-gradient(360deg, rgba(9,63,73,0.6) 0%, rgba(25,173,200,0.5) 50%, rgba(54,204,230,0.5) 100%),
+                  url("header image link");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      overflow: hidden;
+      padding-top: 15rem;
+      padding-bottom: 15rem;
+      margin-bottom: 5.5rem;
+      width: 100%;
+    }
+  </style>
+
+  <body>
+
+    <header>
+      <div class="banner">
+        <div class="banner-text">
+          <h1>Page Name</h1>
+        </div>
+      </div>
+    </header>
+
+    <!--sidebar-->
+    <div class = "sidebar" id ="sidebar">
+      <h4 class = "bar-title"><b>Page name</b></h4>
+      <a class = "bar-item" href = "#1">Overview</a>
+      <hr>
+      <a class = "bar-item" href = "#2">Part 1</a>
+      <hr>
+      <a class = "bar-item" href = "#3">Part 2</a>
+      <hr>
+      <a class = "bar-item" href = "#4">Part 3</a>
+    </div>
+
+    <main>
+      <!--Page Overview-->
+      <div class ="overview" id = "1">
+        <h2>Overview</h2>
+        <div class = "center">
+          <img src="" width="100%" alt = " diagram">
+        </div>
+        <h3></h3>
+        <p></p>
+      </div>
+
+      <hr>
+      <div>
+        <div class="main-section" id = "2">
+          <h2>Part 1</h2>
+          <p>descriptions</p>
+        </div>
+
+        <div class = "section">
+          <h3>section name</h3>
+          <p>Descriptions</p>
+          <h4></h4>
+          <div class = "center">
+            <img src="" width="100%" alt = "">
+            <figurecaption><b></b> <br> </figurecaption>
+          </div>
+          <div class = "center">
+            <img src="" width="100%" alt = "">
+          </div>
+          <button type="button" class="collapsible"><b></b></button>
+          <div class = "content">
+            <h4></h4>
+            <p></p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+      <div>
+        <div class="main-section" id = "3">
+          <h2>Part 2</h2>
+          <p>descriptions</p>
+        </div>
+
+        <div class = "section">
+          <h3>section name</h3>
+          <p>Descriptions</p>
+          <h4></h4>
+          <div class = "center">
+            <img src="" width="100%" alt = "">
+            <figurecaption><b></b> <br> </figurecaption>
+          </div>
+          <div class = "center">
+            <img src="" width="100%" alt = "">
+          </div>
+          <button type="button" class="collapsible"><b></b></button>
+          <div class = "content">
+            <h4></h4>
+            <p></p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+      <div>
+        <div class="main-section" id = "4">
+          <h2>Part 3</h2>
+          <p>descriptions</p>
+        </div>
+
+        <div class = "section">
+          <h3>section name</h3>
+          <p>Descriptions</p>
+          <h4></h4>
+          <div class = "center">
+            <img src="" width="100%" alt = "">
+            <figurecaption><b></b> <br> </figurecaption>
+          </div>
+          <div class = "center">
+            <img src="" width="100%" alt = "">
+          </div>
+          <button type="button" class="collapsible"><b></b></button>
+          <div class = "content">
+            <h4></h4>
+            <p></p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+      <button type="button" class="collapsible"><b>References</b></button>
+      <div class = "content">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+
+    </main>
+
+  </body>
+
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+</html>
